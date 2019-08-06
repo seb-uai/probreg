@@ -563,7 +563,7 @@ void Permutohedral::sseCompute ( float* out, const float* in, int value_size, bo
 		}
 	}
 	// Alpha is a magic scaling constant (write Andrew if you really wanna understand this)
-	constexpr float alpha = 1.0f / (1+powf(2, -d_));
+	const float alpha = 1.0f / (1+powf(2, -d_));
 	
 	// Slicing
 	for( int i=0; i<N_; i++ ){
